@@ -1,0 +1,104 @@
+/* Bearer token bar (above Swagger UI) */
+#toybox-module-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.toybox-module-label {
+  font-weight: 600;
+  font-size: 12px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.toybox-module-btn {
+  padding: 6px 12px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.toybox-module-btn.active {
+  border-color: #49cc90;
+  background: #1f3d32;
+  color: #49cc90;
+}
+
+#toybox-auth-bar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: #1b1b1b;
+  color: #fff;
+  border-bottom: 3px solid #49cc90;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+#toybox-auth-bar label {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+#toybox-token-input {
+  flex: 1;
+  min-width: 280px;
+  padding: 8px 12px;
+  border: 1px solid #49cc90;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: monospace;
+}
+
+#toybox-token-apply,
+#toybox-token-clear {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+#toybox-token-apply {
+  background: #49cc90;
+  color: #1b1b1b;
+}
+
+#toybox-token-clear {
+  background: #555;
+  color: #fff;
+}
+
+#toybox-token-status {
+  font-size: 12px;
+  color: #49cc90;
+}
+
+#toybox-token-status.error {
+  color: #f93e3e;
+}
+
+/* Hide Response headers block in Try it out results */
+.swagger-ui .responses-wrapper h5,
+.swagger-ui .responses-wrapper h4 {
+  /* keep response body titles visible — hide only headers via JS */
+}
+
+.swagger-ui .toybox-hidden-headers {
+  display: none !important;
+}
